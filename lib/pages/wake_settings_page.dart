@@ -87,6 +87,7 @@ class _WakeSettingsPageState extends State<WakeSettingsPage> {
       appBar: AppBar(
         title: Text('Wake-Up Settings'),
       ),
+      backgroundColor: const Color.fromARGB(255, 248, 178, 124),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -134,7 +135,13 @@ class _WakeSettingsPageState extends State<WakeSettingsPage> {
             // Start Button
             ElevatedButton(
               onPressed: startWakeUpSequence,
-              child: Text('Set Alarm'),
+              child: Text(
+                'Set Alarm',
+                style: TextStyle(
+                  fontSize: 30, // Set font size
+                  fontWeight: FontWeight.bold, // Optional: Set font weight
+                ),
+              ),
             ),
           ],
         ),
